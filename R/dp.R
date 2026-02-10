@@ -9,6 +9,6 @@
 #' @examples
 #' dp(1.002)
 dp <- function(x, digits=2){
-  format(round(x, digits), nsmall=digits)
+  trimws(format(round(x, digits), nsmall=digits))
   }
 

@@ -4,7 +4,16 @@
 \alias{find_ci}
 \title{Obtain simple confidence interval}
 \usage{
-find_ci(est, se, crit = qnorm(0.975), exp = FALSE)
+find_ci(
+  est,
+  lo.ci = NULL,
+  hi.ci = NULL,
+  se = NULL,
+  crit = qnorm(0.975),
+  exp = FALSE,
+  recip = FALSE,
+  digits = NULL
+)
 }
 \arguments{
 \item{est}{Estimate}

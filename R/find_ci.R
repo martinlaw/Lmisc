@@ -11,12 +11,30 @@
 #'
 #' @examples
 #' find_ci(est=1, se=0.1, crit=qnorm(0.95))
-find_ci <- function(est, se, crit=qnorm(0.975), exp=FALSE){
-  lo <- est - crit*se
-  hi <- est + crit*se
-  output <- data.frame(est=est, lo=lo, hi=hi)
+find_ci <- function(est,
+                    lo.ci=NULL,
+                    hi.ci=NULL,
+                    se=NULL,
+                    crit=qnorm(0.975),
+                    exp=FALSE,
+                    recip=FALSE,
+                    digits=NULL){
+  if(is.numeric(se)){
+    lo.ci <- est - crit*se
+    hi.ci <- est + crit*se
+  }
+  if(recip==TRUE){
+    est <- 1/est
+    lo.ci.new <- 1/hi.ci
+    hi.ci <- 1/lo.ci
+    lo.ci <- lo.ci.new
+  }
+  output <- data.frame(est=est, lo=lo.ci, hi=hi.ci)
   if(exp==TRUE){
     output <- exp(output)
+  }
+  if(is.numeric(digits)){
+    output <- dp(output, digits=digits)
   }
   return(output)
 }
