@@ -7,7 +7,7 @@
 dp(x, digits = 2)
 }
 \arguments{
-\item{x}{A number.}
+\item{x}{A number}
 
 \item{digits}{Number of decimal places to give (default 2)}
 }

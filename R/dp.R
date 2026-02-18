@@ -1,6 +1,6 @@
 #' Return number with a certain number of decimal places
 #'
-#' @param x A number.
+#' @param x A number
 #' @param digits Number of decimal places to give (default 2)
 #'
 #' @returns Character: the number to the required number of decimal places.
