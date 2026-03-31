@@ -11,7 +11,7 @@
 #'
 #' @examples
 #' print_ci(est=3.001, lo.ci=1.999, hi.ci=5.10001, ci.level="90", digits=2)
-print_ci <- function(est, lo.ci, hi.ci, ci.level="95", digits=2){
+print_ci <- function(est, lo.ci, hi.ci, ci.level="95", digits=2, include95=TRUE){
   if(length(est)==3){ # If vector c(est, lo, hi) supplied
     vec <- est
     est <- vec[1]
@@ -23,6 +23,10 @@ print_ci <- function(est, lo.ci, hi.ci, ci.level="95", digits=2){
     lo.ci <- dp(lo.ci, digits=digits)
     hi.ci <- dp(hi.ci, digits=digits)
   }
-  paste0(est, " (", ci.level, "% CI [", lo.ci, ", ", hi.ci, "])")
+  if(include95==TRUE){
+    paste0(est, " (", ci.level, "% CI [", lo.ci, ", ", hi.ci, "])")
+  }else{
+    paste0(est, " [", lo.ci, ", ", hi.ci, "]")
+  }
 }
 
