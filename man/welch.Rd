@@ -4,12 +4,12 @@
 \alias{welch}
 \title{Undertake Welch test using means, standard deviations and sample sizes}
 \usage{
-welch(x1, x2, sd1, sd2, n1, n2, two.sided.alpha = 0.05)
+welch(mu1, mu2, sd1, sd2, n1, n2, two.sided.alpha = 0.05)
 }
 \arguments{
-\item{x1}{Mean of group 1}
+\item{mu1}{Mean of group 1}
 
-\item{x2}{Mean of group 2}
+\item{mu2}{Mean of group 2}
 
 \item{sd1}{SD of group 1}
 
@@ -28,5 +28,5 @@ Vector of t-statistic, estimate, confidence interval and p-value
 Undertake Welch test using means, standard deviations and sample sizes
 }
 \examples{
-welch(x1=mean(1:10), x2=mean(7:20), sd1=sd(1:10), sd2=sd(7:20), n1=length(1:10), n2=length(7:20))
+welch(mu1=mean(1:10), mu2=mean(7:20), sd1=sd(1:10), sd2=sd(7:20), n1=length(1:10), n2=length(7:20))
 }

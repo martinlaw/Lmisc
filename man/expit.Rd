@@ -7,7 +7,7 @@
 expit(x)
 }
 \arguments{
-\item{x}{}
+\item{x}{Value for taking expit}
 }
 \value{
 Inverse logit

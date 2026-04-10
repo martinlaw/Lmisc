@@ -7,7 +7,7 @@
 logit(p)
 }
 \arguments{
-\item{p}{}
+\item{p}{Value for taking logit}
 }
 \value{
 Logit

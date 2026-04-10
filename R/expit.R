@@ -1,6 +1,6 @@
 #' Takes the inverse logit
 #'
-#' @param x
+#' @param x Value for taking expit
 #'
 #' @returns Inverse logit
 #' @export

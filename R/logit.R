@@ -1,6 +1,6 @@
 #' Takes the logit
 #'
-#' @param p
+#' @param p Value for taking logit
 #'
 #' @returns Logit
 #' @export

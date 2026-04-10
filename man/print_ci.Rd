@@ -4,7 +4,7 @@
 \alias{print_ci}
 \title{Prints typical form for reporting estimate and confidence interval, with optional rounding.}
 \usage{
-print_ci(est, lo.ci, hi.ci, ci.level = "95", digits = 2)
+print_ci(est, lo.ci, hi.ci, ci.level = "95", digits = 2, include95 = TRUE)
 }
 \arguments{
 \item{est}{Estimate}
