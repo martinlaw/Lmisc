@@ -4,10 +4,12 @@
 \alias{hba1c_to_mmol}
 \title{Converts HbA1c from percentage to mmol per mol}
 \usage{
-hba1c_to_mmol(percent)
+hba1c_to_mmol(percent, sd = FALSE)
 }
 \arguments{
 \item{percent}{HbA1c value to convert}
+
+\item{sd}{Logical: is the value a standard deviation? Default FALSE.}
 }
 \value{
 HbA1c in mmol per mol

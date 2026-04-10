@@ -2,18 +2,20 @@
 % Please edit documentation in R/hba1c_to_percent.R
 \name{hba1c_to_percent}
 \alias{hba1c_to_percent}
-\title{Converts HbA1c from mmol per mol to perecentage}
+\title{Converts HbA1c from mmol per mol to percentage}
 \usage{
-hba1c_to_percent(mmol)
+hba1c_to_percent(mmol, sd = FALSE)
 }
 \arguments{
-\item{percent}{HbA1c value to convert}
+\item{mmol}{HbA1c value to convert}
+
+\item{sd}{Logical: is the value a standard deviation? Default FALSE.}
 }
 \value{
 HbA1c in percentage
 }
 \description{
-Converts HbA1c from mmol per mol to perecentage
+Converts HbA1c from mmol per mol to percentage
 }
 \examples{
 hba1c_to_percent(mmol=47)
