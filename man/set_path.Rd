@@ -2,18 +2,20 @@
 % Please edit documentation in R/set_path.R
 \name{set_path}
 \alias{set_path}
-\title{Create character for path to project}
+\title{Create character for path to project data}
 \usage{
-set_path(project.number)
+set_path(project.number, data = TRUE)
 }
 \arguments{
 \item{project.number}{Project number}
+
+\item{data}{Logical: Append "data" subfolder? Default TRUE.}
 }
 \value{
 Character for path to project.
 }
 \description{
-Create character for path to project
+Create character for path to project data
 }
 \examples{
 set_path(135)
