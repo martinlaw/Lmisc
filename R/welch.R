@@ -13,7 +13,7 @@
 #' @export
 #'
 #' @examples
-#' welch(mu1=mean(1:10), mu2=mean(7:20), sd1=sd(1:10), sd2=sd(7:20), n1=length(1:10), n2=length(7:20))
+#' welch(mu1=5.5, mu2=13.5, sd1=3, sd2=4, n1=10, n2=14, two.sided.alpha=0.05)
 welch <- function(mu1, mu2, sd1, sd2, n1, n2, two.sided.alpha=0.05){
   mean.diff <- mu1-mu2
   se1 <- sd1/sqrt(n1)
@@ -23,8 +23,9 @@ welch <- function(mu1, mu2, sd1, sd2, n1, n2, two.sided.alpha=0.05){
   dof1 <- n1-1
   dof2 <- n2-1
   dof <- (se.diff^4)/((se1^4/dof1)+(se2^4/dof2))
-  p <- 2*pt(-abs(t.stat), dof)
-  ci.lo <- mean.diff - se.diff*qt(1-two.sided.alpha/2, dof)
-  ci.hi <- mean.diff + se.diff*qt(1-two.sided.alpha/2, dof)
-  return(c(t.stat=t.stat, est=mean.diff, ci.lo=ci.lo, ci.hi=ci.hi, p=p))
+  p <- 2*stats::pt(-abs(t.stat), dof)
+  ci.lo <- mean.diff - se.diff*stats::qt(1-two.sided.alpha/2, dof)
+  ci.hi <- mean.diff + se.diff*stats::qt(1-two.sided.alpha/2, dof)
+  output <- c(t.stat=t.stat, est=mean.diff, ci.lo=ci.lo, ci.hi=ci.hi, p=p)
+  return(output)
 }

@@ -5,6 +5,7 @@
 #' @param hi.ci Upper confidence interval
 #' @param ci.level Level of confidence interval (default "95")
 #' @param digits Number of decimal places (default NULL)
+#' @param include95 Include string for "% CI"
 #'
 #' @returns Typical character data for estimate and confidence interval.
 #' @export

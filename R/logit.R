@@ -1,4 +1,4 @@
-#' Takes the logit
+#' Takes the logit. Alias is LO ("log odds").
 #'
 #' @param p Value for taking logit
 #'
@@ -10,3 +10,8 @@
 logit <- function(p){
   return(log(p/(1-p)))
 }
+
+#' @rdname logit
+#' @examples LO(0.5)
+#' @export
+LO <- logit

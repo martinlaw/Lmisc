@@ -9,7 +9,7 @@ find_ci(
   lo.ci = NULL,
   hi.ci = NULL,
   se = NULL,
-  crit = qnorm(0.975),
+  crit = stats::qnorm(0.975),
   exp = FALSE,
   recip = FALSE,
   digits = NULL
@@ -18,11 +18,19 @@ find_ci(
 \arguments{
 \item{est}{Estimate}
 
+\item{lo.ci}{Lower CI}
+
+\item{hi.ci}{Upper CI}
+
 \item{se}{Standard error}
 
 \item{crit}{Critical value. Default qnorm(0.975)}
 
 \item{exp}{Logical. Exponentiate the output? Default FALSE}
+
+\item{recip}{Take reciprocal}
+
+\item{digits}{Number of decimal places}
 }
 \value{
 Single-row data frame containing estimate and confidence intervals.
@@ -31,5 +39,5 @@ Single-row data frame containing estimate and confidence intervals.
 Obtain simple confidence interval
 }
 \examples{
-find_ci(est=1, se=0.1, crit=qnorm(0.95))
+find_ci(est=1, se=0.1, crit=1.96)
 }

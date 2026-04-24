@@ -16,6 +16,8 @@ print_ci(est, lo.ci, hi.ci, ci.level = "95", digits = 2, include95 = TRUE)
 \item{ci.level}{Level of confidence interval (default "95")}
 
 \item{digits}{Number of decimal places (default NULL)}
+
+\item{include95}{Include string for "\% CI"}
 }
 \value{
 Typical character data for estimate and confidence interval.

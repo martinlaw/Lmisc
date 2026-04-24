@@ -2,9 +2,12 @@
 % Please edit documentation in R/logit.R
 \name{logit}
 \alias{logit}
-\title{Takes the logit}
+\alias{LO}
+\title{Takes the logit. Alias is LO ("log odds").}
 \usage{
 logit(p)
+
+LO(p)
 }
 \arguments{
 \item{p}{Value for taking logit}
@@ -13,8 +16,9 @@ logit(p)
 Logit
 }
 \description{
-Takes the logit
+Takes the logit. Alias is LO ("log odds").
 }
 \examples{
 logit(0.5)
+LO(0.5)
 }

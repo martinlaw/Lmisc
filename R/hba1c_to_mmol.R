@@ -9,6 +9,8 @@
 #' @examples
 #' hba1c_to_mmol(percent=7)
 hba1c_to_mmol <- function(percent, sd=FALSE){
-  mmol <- ifelse(test=sd==TRUE, yes=10.929*percent, no=10.929*(percent-2.152))
+  mmol <- ifelse(test=sd==TRUE,
+                 yes=10.929*percent,
+                 no=10.929*(percent-2.152))
   mmol
 }

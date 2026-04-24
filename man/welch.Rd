@@ -28,5 +28,5 @@ Vector of t-statistic, estimate, confidence interval and p-value
 Undertake Welch test using means, standard deviations and sample sizes
 }
 \examples{
-welch(mu1=mean(1:10), mu2=mean(7:20), sd1=sd(1:10), sd2=sd(7:20), n1=length(1:10), n2=length(7:20))
+welch(mu1=5.5, mu2=13.5, sd1=3, sd2=4, n1=10, n2=14, two.sided.alpha=0.05)
 }
