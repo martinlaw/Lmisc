@@ -19,5 +19,10 @@ Useful links:
 \author{
 \strong{Maintainer}: Martin Law \email{martin.law@mrc-bsu.cam.ac.uk}
 
+Authors:
+\itemize{
+  \item Martin Law \email{martin.law@mrc-bsu.cam.ac.uk}
+}
+
 }
 \keyword{internal}
