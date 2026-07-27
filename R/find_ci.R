@@ -23,6 +23,12 @@ find_ci <- function(est,
                     exp=FALSE,
                     recip=FALSE,
                     digits=NULL){
+  if(length(est)==3){ # If vector c(est, lo, hi) supplied
+    vec <- est
+    est <- vec[1]
+    lo.ci <- vec[2]
+    hi.ci <- vec[3]
+  }
   if(is.numeric(se)){
     lo.ci <- est - crit*se
     hi.ci <- est + crit*se
