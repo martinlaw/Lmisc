@@ -17,7 +17,7 @@ print_p <- function(p, decimals=2, sep="", add.p=FALSE){
                       no=paste(Lmisc::dp(p, digits=decimals), sep=sep))
   if(add.p==TRUE){
     printed.p <- ifelse(test=p<min.p,
-                        yes=paste("p", printed.p), sep=sep,
+                        yes=paste("p", printed.p, sep=sep),
                         no=paste("p", "=", printed.p, sep=sep))
   }
   printed.p
