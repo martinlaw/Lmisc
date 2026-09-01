@@ -3,6 +3,7 @@
 #' @param p P-value to print
 #' @param decimals Number of decimal places (default=3)
 #' @param sep Separator on each side of operator (default="")
+#' @param add.p Logical. Should "p" or "p=" be included in outout? Default FALSE.
 #'
 #' @returns String showing p-value
 #' @export

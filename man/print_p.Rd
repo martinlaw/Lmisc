@@ -4,7 +4,7 @@
 \alias{print_p}
 \title{Print p value as-is, or with "<0.x", to selected decimal place}
 \usage{
-print_p(p, decimals = 2, sep = "")
+print_p(p, decimals = 2, sep = "", add.p = FALSE)
 }
 \arguments{
 \item{p}{P-value to print}
@@ -12,6 +12,8 @@ print_p(p, decimals = 2, sep = "")
 \item{decimals}{Number of decimal places (default=3)}
 
 \item{sep}{Separator on each side of operator (default="")}
+
+\item{add.p}{Logical. Should "p" or "p=" be included in outout? Default FALSE.}
 }
 \value{
 String showing p-value
