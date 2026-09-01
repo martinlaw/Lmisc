@@ -1,6 +1,6 @@
 Package: Lmisc
 Title: Miscellaneous Functions Martin Law
-Version: 1.0.0
+Version: 1.1.0
 Authors@R: 
     person("Martin", "Law", , "martin.law@mrc-bsu.cam.ac.uk", role = c("aut", "cre"))
 Description: Miscellaneous functions.
