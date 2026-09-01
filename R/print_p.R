@@ -9,10 +9,15 @@
 #'
 #' @examples
 #' print_p(0.000004321, dec=4)
-print_p <- function(p, decimals=2, sep=""){
+print_p <- function(p, decimals=2, sep="", add.p=FALSE){
   min.p <- 10^-decimals
   printed.p <- ifelse(test=p<min.p,
-                      yes=paste("p", "<", Lmisc::dp(min.p, digits=decimals), sep=sep),
-                      no=paste("p", "=", Lmisc::dp(p, digits=decimals), sep=sep))
+                      yes=paste("<", Lmisc::dp(min.p, digits=decimals), sep=sep),
+                      no=paste(Lmisc::dp(p, digits=decimals), sep=sep))
+  if(add.p==TRUE){
+    printed.p <- ifelse(test=p<min.p,
+                        yes=paste("p", printed.p), sep=sep,
+                        no=paste("p", "=", printed.p, sep=sep))
+  }
   printed.p
 }
