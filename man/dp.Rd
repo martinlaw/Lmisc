@@ -2,20 +2,22 @@
 % Please edit documentation in R/dp.R
 \name{dp}
 \alias{dp}
-\title{Return number with a certain number of decimal places}
+\title{Print number with a certain number of decimal places}
 \usage{
-dp(x, digits = 2)
+dp(x, digits = 2, rm.dp.if.geq = 999.5)
 }
 \arguments{
 \item{x}{A number}
 
 \item{digits}{Number of decimal places to give (default 2)}
+
+\item{rm.dp.if.geq}{Remove decimal places for values greater than other equal to some value (default 999.5)}
 }
 \value{
 Character: the number to the required number of decimal places.
 }
 \description{
-Return number with a certain number of decimal places
+Print number with a certain number of decimal places
 }
 \examples{
 dp(1.002)

@@ -1,6 +1,6 @@
 Package: Lmisc
 Title: Miscellaneous Functions Martin Law
-Version: 1.1.0
+Version: 1.1.1
 Authors@R: 
     person("Martin", "Law", , "martin.law@mrc-bsu.cam.ac.uk", role = c("aut", "cre"))
 Description: Miscellaneous functions.
@@ -12,3 +12,5 @@ BugReports: https://github.com/martinlaw/Lmisc/issues
 Imports: 
     grDevices
 Config/roxygen2/version: 8.0.0
+Suggests: 
+    rstudioapi

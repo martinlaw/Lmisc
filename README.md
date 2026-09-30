@@ -8,7 +8,7 @@ Lmisc contains a range of miscellaneous functions that I have found useful:
 
 - compare(): For two vectors, reports results of setdiff() in both directions, union(), intersect(), setequal() (i.e. if elements are the same), length()s, and unique values.
 - dev_off(): Shuts down all graphic devices, like a repeated call to dev.off().
-- dp(): Returns a number to a certain number of decimal places, while trimming white space.
+- dp(): Prints a number to a certain number of decimal places, while trimming white space. Prints zero decimal places for large numbers if desired (useful for using on vectors).
 - expit(), logit().
 - find_ci(): Finds confidence interval from estimate and standard error, including taking reciprocal and/or exponential. Can also accept estimate and confidence interval and return reciprocal and/or exponent.
 - print_ci(): Prints estimate and confidence interval neatly, e.g. "XX (95% CI [YY, ZZ])", given estimate and confidence interval.
