@@ -18,6 +18,8 @@ print_ci(est, lo.ci, hi.ci, ci.level = "95", digits = 2, include95 = TRUE, ...)
 \item{digits}{Number of decimal places (default NULL)}
 
 \item{include95}{Include string for "\% CI"}
+
+\item{...}{Additional arguments to pass to dp()}
 }
 \value{
 Typical character data for estimate and confidence interval.

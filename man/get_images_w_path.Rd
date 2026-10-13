@@ -2,18 +2,20 @@
 % Please edit documentation in R/get_images_w_path.R
 \name{get_images_w_path}
 \alias{get_images_w_path}
-\title{Create a string vector of all .png files in a folder, including the path}
+\title{Create a string vector of all image files in a folder, including the path.}
 \usage{
-get_images_w_path(path)
+get_images_w_path(path, filetype = ".png")
 }
 \arguments{
 \item{path}{A path to a folder containing png files.}
+
+\item{filetype}{Extension to search for. Defaults to ".png".}
 }
 \value{
-A string vector of all .png files in a folder, including the path
+A string vector of all matching files in a folder, including the path, which can be immediately be wrapped inside knitr::include_graphics().
 }
 \description{
-Create a string vector of all .png files in a folder, including the path
+Create a string vector of all image files in a folder, including the path.
 }
 \examples{
 \dontrun{

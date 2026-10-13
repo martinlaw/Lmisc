@@ -1,0 +1,33 @@
+---
+title: "Speaker's Title"
+author: "Speaker's Name"
+date: "The Date"
+output: html_document
+---
+
+<style>
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  h3 { font-size: 1.5rem; }
+  body { font-size: 1.25rem; }
+</style>
+
+```{r setup, include=TRUE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r saving_screenshots, echo=FALSE}
+thedate <- Lmisc::date_current_file()
+
+path.to.screenshots <- NULL # Add path to screenshots/images here
+
+if(!is.null(path.to.screenshots)){
+  all.images <- Lmisc::get_images_w_path(path.to.screenshots)
+  images <- all.images[grep(pattern = thedate, x = all.images)]
+}
+```
+
+```{r, eval=FALSE}
+knitr::include_graphics(images) # Show all screenshots/images
+```
+

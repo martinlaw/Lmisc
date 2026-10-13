@@ -2,6 +2,7 @@
 
 export(LO)
 export(compare)
+export(date_current_file)
 export(dev_off)
 export(dp)
 export(expit)

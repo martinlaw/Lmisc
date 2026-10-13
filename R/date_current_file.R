@@ -1,6 +1,6 @@
-#' Finds the date of the current file
+#' Finds the creation date of the current file
 #'
-#' @returns Returns the date of the current file
+#' @returns Returns the creation date of the current file
 #' @export
 #'
 #' @examples

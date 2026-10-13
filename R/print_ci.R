@@ -6,6 +6,7 @@
 #' @param ci.level Level of confidence interval (default "95")
 #' @param digits Number of decimal places (default NULL)
 #' @param include95 Include string for "% CI"
+#' @param ... Additional arguments to pass to dp()
 #'
 #' @returns Typical character data for estimate and confidence interval.
 #' @export
